@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Basics - Methods</title>
+
+    <head>
+
+        <body>
+            <h1>Javascript Methods 1</h1>
+            <p>Below are some script examples that use Javascript Methods</p>
+            <script>
+                var alphabet = "abcdefghijklmnopqrstuvwxyz";
+                var count = alphabet.length;
+                document.write(count, "");
+            </script>
+
+            <script>
+                var x = 123.456;
+                document.write(x.toExponential(3), " ");
+                document.write(x.toExponential(2), " ");
+                document.write(x.toExponential(1), " ");
+                document.write(x.toExponential());
+            </script>
+
+            <script>
+                var x = 123.456;
+                document.write(x.toFixed(4), ' ');
+                document.write(x.toFixed(3), ' ');
+                document.write(x.toFixed(2), ' ');
+                document.write(x.toFixed(1), ' ');
+                document.write(x.toFixed());
+            </script>
+
+            <script>
+                var x = 123.456;
+                document.write(x.toPrecision(4), ' ');
+                document.write(x.toPrecision(3), ' ');
+                document.write(x.toPrecision(2), ' ');
+                document.write(x.toPrecision(1), ' ');
+                document.write(x.toPrecision());
+            </script>
+            <script>
+                x = true;
+                document.write(Number(x), "<br/>");
+                x = false;
+                document.write(Number(x), "<br/>");
+                x = "10"
+                document.write(Number(x), "<br/>");
+                x = "10 20"
+                document.write(Number(x), "<br/>");
+            </script>
+
+            <script>
+                document.write(parseInt("10"), "<br/>");
+                document.write(parseInt("10.33"), "<br/>");
+                document.write(parseInt("10 6"), "<br/>");
+                document.write(parseInt("10 years"), "<br/>");
+                document.write(parseInt("years 10"), "<br/>");
+            </script>
+
+            <script>
+                document.write(parseFloat("10"), "<br/>");
+                document.write(parseFloat("10.33"), "<br/>");
+                document.write(parseFloat("10 6"), "<br/>");
+                document.write(parseFloat("10 years"), "<br/>");
+                document.write(parseFloat("years 10"), "<br/>");
+            </script>
+
+            <script>
+                var txt = "Hello World!";
+                document.write(txt.length);
+            </script>
+
+            <script>
+                var str = "Please locate where 'locate' occurs!"
+                var pos = str.indexOf("locate");
+                document.write(pos);
+            </script>
+
+            <script>
+                var str = "Please locate where 'locate' occurs!"
+                var pos = str.lastIndexOf('locate');
+                document.write(pos);
+            </script>
+
+            <script>
+                var str = "Please locate where 'locate' occurs!";
+                var pos = str.search("locate");
+                document.write(pos);
+            </script>
+
+            <script>
+                var str = "Apple, Banana, Kiwi";
+                var word = str.slice(7, 13);
+                document.write(word);
+            </script>
+
+            <script>
+                var str = "Apple, Banana, Kiwi";
+                var word = str.slice(-12, -6);
+                document.write(word);
+            </script>
+
+            <script>
+                var str = "Apple, Banana, Kiwi";
+                var word = str.slice(7);
+                document.write(word);
+            </script>
+
+            <script>
+                var str = "Apple, Banana, Kiwi";
+                var word = str.substring(7, 13);
+                document.write(word);
+            </script>
+
+            <script>
+                var str = "Apple, Banana, Kiwi";
+                var num = str.substr(7, 6);
+                document.write(num);
+            </script>
+
+            <script>
+                var str = "I love TL!";
+                var txt = str.replace("TL", "SR with all my heart!!!!");
+                document.write(txt);
+            </script>
+
+            <script>
+                var str = "TL is a great school! I love TL!"
+                var txt = str.replace(/TL/g, "SR");
+                document.write(txt);
+            </script>
+
+            <script>
+                var lower = "we are sr!";
+                var upper = lower.toUpperCase();
+                document.write(upper);
+                var txt = "Mr. Simenstad Loves Boats!";
+                document.write(txt.toLowerCase());
+            </script>
+
+            <script>
+                var text1 = "AP";
+                var text2 = "CSP!";
+                document.write(text1.concat(" ", text2));
+            </script>
+
+            <script>
+                var str = "AP CSP is my favorite class!";
+                document.write(str.charAt(5));
+            </script>
+
+            <script>
+                var str1 = "a-b-c-d-e-f"; //string split by dash
+                var arr1 = str1.split("-"); //an array
+                document.write(arr1, "</p>");
+
+                var str2 = "h i j k l m"; //string split by spaces
+                var arr2 = str2.split(" "); //an array
+                document.write(arr2, "</p>");
+
+                var str3 = "n|o|p|q|r|s"; //string split by pipes
+                var arr3 = str3.split("|"); //an array
+                document.write(arr3, "</p>");
+             </script>
+
+        </body>
+
+</html>

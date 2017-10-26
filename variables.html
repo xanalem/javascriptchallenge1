@@ -1,0 +1,63 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>Javascript is embedded in the HTML with the script tag.</h1>
+    <p>
+        In this example, x, y, and z are variables because they are embedded using javascript.
+    </p>
+    <script>
+        var x = 5;
+        var y = 20;
+        var z = x + y;
+        document.write("x = ", x, " ");
+        document.write("y = ", y, " ");
+        document.write("z = x + y = ", z, " ");
+
+        var x = "a";
+        var y = 'b';
+        var z = x + y;
+        document.write(x, " ");
+        document.write(y, " ");
+        document.write(z);
+
+        var x = "San ";
+        var y = "Rafael";
+        var z = x + y;
+        document.write(z);
+
+        var x = 2 + 3 + 4;
+        var y = "2" + 3 + 4;
+        document.write(x, "");
+        document.write(y);
+
+        var x = 100;
+        var y = "computer"
+        var z = x / y;
+        document.write(z);
+
+        var cars = ["Saab", "Volvo", "BMW"];
+        document.write(cars);
+
+        var cars = ["Saab", "Volvo", "BMW"];
+        document.write(cars[0]);
+
+        var cars = ["Saab", "Volvo", "BMW"];
+        cars[0] = "Porsche "
+        document.write(cars);
+
+        var cars = ["Saab", "Volvo", "BMW"];
+        cars[0] = "Porsche "
+        cars[3] = "Saab "
+        document.write(cars);
+
+        var cars = [" Saab ", 5, " BMW ", 17];
+        document.write(cars[1] + cars[3], "");
+        document.write(cars[0] + cars[1]);
+
+    </script>
+</body>
+
+</html>

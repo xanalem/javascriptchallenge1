@@ -1,0 +1,66 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+
+    <script>
+        var greetings = ["Ciao!", "Hola!", "Howdy Partner!", "こんにちは!", "Take me to your leader!", "Bonjour!", "Saturday", "Здравствуйте!"];
+
+        var random_greet = Math.floor(Math.random() * 8);
+        document.write(greetings[random_greet], "</br>");
+    </script>
+
+    <script>
+        var date = new Date();
+        var daynumber = date.getDate();
+        var monthnumber = date.getMonth();
+        var yearnumber = date.getFullYear();
+
+        var month_arry = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+
+
+        document.write(month_arry[monthnumber], " ", daynumber, ", ", yearnumber);
+    </script>
+
+
+    <script>
+        var today = new Date();
+
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var dayofweek = today.getDay();
+
+        document.write(days[dayofweek], "</br>");
+    </script>
+
+    <script>
+        var day_integer_value = (daynumber % 2);
+
+        if (daynumber == 1) {
+            document.write("Today's Date is an odd numbered day!");
+
+        } else {
+            document.write("Today's Date is an even numbered day!", "</br>");
+        }
+    </script>
+
+    <script>
+        var i_hate_school = new Date("6/8/2018");
+        var minutes_june = Math.floor((i_hate_school.getTime() - today.getTime()) / 60000);
+        var hours_june = Math.floor((i_hate_school.getTime() - today.getTime()) / 3600000);
+        var days_june Math.floor((i_hate_school.getTime() - today.getTime()) / 86400000);
+
+
+        document.write("The number of minutes until the day I get to leave this prison are ", minutes_june, " minutes!");
+
+        document.write()
+
+
+    </script>
+
+</body>
+
+</html>
