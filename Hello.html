@@ -1,66 +1,92 @@
-<html>
+<html lang="en">
 
 <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
+    <div class="container h1 text-center">
+        <script>
+            //Random greeting script
+            var greetings = ["Ciao!", "Hola!", "Howdy Partner!", "こんにちは！", "Take me to your leader!", "Bonjour!", "Здравствуйте!"];
 
-    <script>
-        var greetings = ["Ciao!", "Hola!", "Howdy Partner!", "こんにちは!", "Take me to your leader!", "Bonjour!", "Saturday", "Здравствуйте!"];
+            var random_greet = Math.floor(Math.random() * 7);
 
-        var random_greet = Math.floor(Math.random() * 8);
-        document.write(greetings[random_greet], "</br>");
-    </script>
+            document.write(greetings[random_greet], "</br>");
 
-    <script>
-        var date = new Date();
-        var daynumber = date.getDate();
-        var monthnumber = date.getMonth();
-        var yearnumber = date.getFullYear();
+        </script>
+    </div>
 
-        var month_arry = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    <div class="container h3 text-center">
+        <script>
+            //Month, day and year script
+            var date = new Date();
+            var daynumber = date.getDate();
+            var monthnumber = date.getMonth();
+            var yearnumber = date.getFullYear();
 
+            var month_arry = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+            document.write(month_arry[monthnumber], " ", daynumber, ", ", yearnumber);
 
-        document.write(month_arry[monthnumber], " ", daynumber, ", ", yearnumber);
-    </script>
-
-
-    <script>
-        var today = new Date();
-
-        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        var dayofweek = today.getDay();
-
-        document.write(days[dayofweek], "</br>");
-    </script>
-
-    <script>
-        var day_integer_value = (daynumber % 2);
-
-        if (daynumber == 1) {
-            document.write("Today's Date is an odd numbered day!");
-
-        } else {
-            document.write("Today's Date is an even numbered day!", "</br>");
-        }
-    </script>
-
-    <script>
-        var i_hate_school = new Date("6/8/2018");
-        var minutes_june = Math.floor((i_hate_school.getTime() - today.getTime()) / 60000);
-        var hours_june = Math.floor((i_hate_school.getTime() - today.getTime()) / 3600000);
-        var days_june Math.floor((i_hate_school.getTime() - today.getTime()) / 86400000);
+        </script>
 
 
-        document.write("The number of minutes until the day I get to leave this prison are ", minutes_june, " minutes!");
+        <script>
+            //Day of the week script
+            var today = new Date();
 
-        document.write()
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var dayofweek = today.getDay();
 
+            document.write(days[dayofweek], "</br>");
 
-    </script>
+        </script>
 
+        <script>
+            //Even or odd numbered day script
+            var day_integer_value = (daynumber % 2);
+
+            if (day_integer_value == 1) {
+                document.write("Today's Date is an odd numbered day!");
+
+            } else {
+                document.write("Today's Date is an even numbered day!", "</br>");
+            }
+
+        </script>
+
+        <script>
+            //Time until school gets out script
+            var endschool = new Date("6/8/2018");
+
+            var days_exact = ((endschool.getTime() - today.getTime()) / 86400000);
+
+            var days_june = Math.floor(days_exact);
+
+            var hours_june = Math.floor((days_exact % days_june) * 24);
+
+            var minutes_june = Math.floor((((days_exact % days_june) * 24) % hours_june) * 60);
+
+            document.write("The time until my sentence is up is: ", days_june, " days, ", hours_june, " hours, and ", minutes_june, " minutes!", "</br>");
+
+        </script>
+
+        <script>
+            //String to all caps challenge
+            var SR = "san rafael high school-185 mission ave-san rafael ca 94901";
+            var upperSR = SR.toUpperCase();
+            var SRbreak = upperSR.replace(/-/g, "</br>");
+            document.write(SRbreak);
+
+        </script>
+    </div>
 </body>
 
 </html>
