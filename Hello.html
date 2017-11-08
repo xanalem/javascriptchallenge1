@@ -17,10 +17,9 @@
 
             var leader = greetings[random_greet];
 
-            document.getElementById("button").innerHTML = leader;
+            var buto = document.querySelector("button").innerHTML = leader;
 
         }
-
     </script>
     <style>
         .astext {
@@ -29,20 +28,16 @@
             margin: 0;
             padding: 0;
         }
-
     </style>
 </head>
 
 <body onload="greetingbutton()">
 
     <div class="container h1 text-center">
-        <button onclick="greetingbutton()" class="astext" id="doSmth">
-        <script>
-           document.write();
-            </script>
-        </button>
-        <h1 id="button"></h1>
 
+        <button onclick="greetingbutton()" class="astext" id="doSmth"></button>
+
+        <h1 id="button"></h1>
     </div>
 
     <div class="container h3 text-center">
@@ -55,8 +50,7 @@
 
             var month_arry = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-            document.write(month_arry[monthnumber], " ", daynumber, ", ", yearnumber);
-
+            document.write("Today is ", month_arry[monthnumber], " ", daynumber, ", ", yearnumber, "</br>");
         </script>
 
 
@@ -67,8 +61,7 @@
             var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
             var dayofweek = today.getDay();
 
-            document.write(days[dayofweek], "</br>");
-
+            document.write("Be happy because it's ", days[dayofweek], "!", "</br>");
         </script>
 
         <script>
@@ -76,18 +69,16 @@
             var day_integer_value = (daynumber % 2);
 
             if (day_integer_value == 1) {
-                document.write("Today's Date is an odd numbered day!", "</br>");
+                document.write("Today is an odd numbered day!", "</br>");
 
             } else {
-                document.write("Today's Date is an even numbered day!", "</br>");
+                document.write("Today is an even numbered day!", "</br>");
             }
-
         </script>
 
         <script>
             //even or odd day in a special way ;)
             var day_special_integer
-
         </script>
 
         <script>
@@ -102,8 +93,7 @@
 
             var minutes_june = Math.floor((((days_exact % days_june) * 24) % hours_june) * 60);
 
-            document.write("The time until my sentence is up is: ", days_june, " days, ", hours_june, " hours, and ", minutes_june, " minutes!", "</br>");
-
+            document.write("The time until my sentence is up is: ", days_june, " days, ", hours_june, " hours, and ", minutes_june, " minutes!", "</br>", "</br>");
         </script>
 
         <script>
@@ -112,10 +102,11 @@
             var upperSR = SR.toUpperCase();
             var SRbreak = upperSR.replace(/-/g, "</br>");
             document.write(SRbreak);
-
         </script>
 
+
     </div>
+
 </body>
 
 </html>
